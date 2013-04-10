@@ -7,7 +7,7 @@
 # from the SensorLogger app to transform and plot.
 # The second argument indicates whether the files should be plotted (default true)
 #
-# Example: $ ./transform_logs_to_directory logs/
+# Example: $ ./transform_logs_to_directory logs/stand-sit-walk-stand-sit
 #
 # Roemer Vlasveld (roemer.vlasveld@gmail.com)
 
