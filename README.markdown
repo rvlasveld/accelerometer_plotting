@@ -44,7 +44,7 @@ These steps can be executed by using the command line script:<br />
 An installed Ruby and Octave environment is required.
 
 ## Results
-An example of a gathered plot can be seen (link naar afbeelding).
+An example of a gathered plot can be seen [here](https://github.com/rvlasveld/accelerometer_plotting/blob/master/logs/stand-sit-walk-stand-sit/20130404_111852/_accumulated_annotated.png).
 Without any knowledge about the performed activities, a (slightly trained) human eye can recognize different activities, or at least transitions between them.
 The annotations are added manually to aid the interpretation of the data for the reader.
 The noisy measurements and the beginning and ending are the result of starting and stopping the logging while the phone is in the hand.
