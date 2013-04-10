@@ -57,6 +57,6 @@ This way of implementation enables fast feedback from a theoretical idea and wis
 All the used source code is available on a Github project [Accelerometer Plotting](https://github.com/rvlasveld/accelerometer_plotting).
 Please feel free to use, reuse and modify the code to your needs.
 Included is one example run of activities.
-The graphs in `logs/stand-sit-walk-stand-sit` are the result of executing a single run.
+The graphs in [logs/stand-sit-walk-stand-sit](https://github.com/rvlasveld/accelerometer_plotting/blob/master/logs/stand-sit-walk-stand-sit/20130404_111852/) are the result of executing a single run.
 The activities performed are, in executed order, standing, sitting, walking with a 180 degree turn, standing and sitting.
 The file _accumulated_annotated.png has manually annotations to provide the reading some insight in the data.
