@@ -1,6 +1,6 @@
 #! /usr/local/bin/octave -f
 
-# Octave implementation to plot SensorLogger transformed files to one graph
+# Octave implementation to plot SensorLogger transformed files to one fie
 #
 #
 # Roemer Vlasveld (roemer.vlaseld@gmail.com)
@@ -20,7 +20,7 @@ source('./load_SensorLogger_directory.m')
 arg_list = argv();
 directory = arg_list{1};
 
-files = load_directory(directory)
+files = load_directory(directory);
 
 # Determine of path already has trailing slash
 separator = "";
@@ -33,11 +33,14 @@ end
 for i = 1 : length(files)
   clf;
   metric = files{i};
-  plot_command = cstrcat("plot(", metric, "(:,2),", metric, "(:,3:5), '-')");
-  lines = eval(plot_command);
-  print_location = strcat(directory, separator, "_", metric, ".png")
-  title (strrep(print_location, '_', '\_'))
-  eval( cstrcat("print -dpng ", print_location, ' "-S1700,800"') );
+  size_metric = eval(cstrcat("size(", metric, ", 1)"))
+  if size_metric > 0
+    plot_command = cstrcat("plot(", metric, "(:,2),", metric, "(:,3:5), '-')");
+    lines = eval(plot_command);
+    print_location = strcat(directory, separator, "_", metric, ".png");
+    title (strrep(print_location, '_', '\_'));
+    eval( cstrcat("print -dpng ", print_location, ' "-S1700,800"') );
+  end
 end
 
 
@@ -55,7 +58,7 @@ for i = 1 : length(plot_metrics)
   plot_command = cstrcat("plot(", metric, "(:,2),", metric, "(:,3:5), '-')");
   lines = eval(plot_command);
   title(strrep(plot_metrics{i}, '_', '\_'));
-  print_location = strcat(directory, separator, "_accumulated.png")
+  print_location = strcat(directory, separator, "_accumulated.png");
 
   eval( cstrcat("print -dpng ", print_location, ' "-S1700,1200"') );
 end
