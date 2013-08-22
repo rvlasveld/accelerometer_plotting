@@ -1,3 +1,5 @@
+(This material comes from the blog post [Visualizing Accelerometer Data](rvlasveld.github.io/blog/2013/04/12/visualizing-accelerometer-data/) on my blog)
+
 # Visualizing accelerometer data
 
 *Every major application or breakthrough starts with just a simple idea.
