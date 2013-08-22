@@ -1,4 +1,4 @@
-(This material comes from the blog post [Visualizing Accelerometer Data](rvlasveld.github.io/blog/2013/04/12/visualizing-accelerometer-data/) on my blog)
+(This material comes from the blog post [Visualizing Accelerometer Data](http://rvlasveld.github.io/blog/2013/04/12/visualizing-accelerometer-data/) on my blog)
 
 # Visualizing accelerometer data
 
